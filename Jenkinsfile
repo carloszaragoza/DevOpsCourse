@@ -13,9 +13,8 @@ pipeline {
         stage('Deploy Frontend Web') {
             steps {
                 echo 'Deploy Frontend Angular'
-                sh 'docker build -t frontCZ .'
-                sh 'docker run -d -p 9090:80 frontCZ '
-                
+                sh 'docker build -t frontcz .'
+                sh 'docker run -d -p 9090:80 frontcz'
             }
         }
     }
